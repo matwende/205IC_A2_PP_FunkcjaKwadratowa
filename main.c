@@ -23,12 +23,7 @@ struct FunkKwadrat {
 int main() {
     struct FunkKwadrat* mojaFunkcja = getFuncParams();
     findDelta(mojaFunkcja);
-    if(mojaFunkcja->delta<0) {
-        printf("Funkcja nie ma miejsc zerowych->\n");
-    }
-    else {
-        findZeros(mojaFunkcja);
-    }
+    findZeros(mojaFunkcja);
     calcualateVertex(mojaFunkcja);
     printResult(mojaFunkcja);
 
